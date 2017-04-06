@@ -1,0 +1,17 @@
+body { background: #666; }
+
+.menu {
+	display: inline-block;
+
+	&__item {
+		display: inline-block;
+	}
+}
+
+.main-content {
+	background: #fff;
+}
+
+.main-sidebar {
+	background: #333;
+}
