@@ -7,7 +7,6 @@ body { background: #666; }
 	margin: 0 auto;
 	max-width: 1020px;
 	background: $main-color;
-	height: 100%;
 }
 
 .wrap {
@@ -51,6 +50,15 @@ body { background: #666; }
 	flex-direction: row;
 }
 
+.ticker {
+	background: #333;
+	padding: 0.5em;
+
+	color: $main-color;
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
 .main-content {
 	background: #fff;
 	display: flex;
@@ -58,7 +66,7 @@ body { background: #666; }
 }
 
 .sidebar {
-	width: 250px;
+	width: 275px;
 	background: #333;
 	flex: 2 0 auto;
 }

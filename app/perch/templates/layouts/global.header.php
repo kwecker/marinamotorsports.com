@@ -58,5 +58,5 @@
 	</section>
 
 	<aside class="ticker">
-		<p>The Little Car Show / </p>
+		<span>The Little Car Show / Wednesday, August 16, 2017</span>
 	</aside>
