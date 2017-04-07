@@ -8,8 +8,8 @@ perch_layout('global.header', array( 'section' => $section ));
 ?>
 
 <section class="main-content">
-	<div class="row">
-		<section class="content nine columns">
+	<section class="content">
+		<div class="wrap">
 			<header>
 				<h1>Welcome to Marina Motorsports, Inc.</h1>
 			</header>
@@ -31,9 +31,11 @@ perch_layout('global.header', array( 'section' => $section ));
 				</header>
 
 			</section>
-		</section>
+		</div>
+	</section>
 
-		<aside class="main-sidebar three columns">
+	<aside class="sidebar sidebar--main">
+		<div class="wrap">
 			<div class="button">
 				<img src="" alt="">
 				<span class="text">Free Swap Meets!</span>
@@ -42,8 +44,8 @@ perch_layout('global.header', array( 'section' => $section ));
 				<img src="" alt="">
 				<span class="text">AutoX</span>
 			</div>
-		</aside>
-	</div>
+		</div>
+	</aside>
 </section>
 
 <?php perch_layout('global.footer', array( 'section' => $section )); ?>

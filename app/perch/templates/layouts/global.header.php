@@ -17,10 +17,10 @@
 </head>
 <body>
 
-<div class="wrapper container">
+<div class="wrapper">
 
 	<header class="main-header">
-		<nav id="main-navigation">
+		<nav id="main-navigation" class="group">
 			<ul class="menu menu--left">
 				<li class="menu__item"><a href="" class="menu__link">Home</a></li><!--
 			 --><li class="menu__item"><a href="" class="menu__link">Events</a></li><!--
@@ -45,10 +45,18 @@
 	</header>
 
 	<section id="call-to-action">
-		<div class="row">
-			<section class="slideshow nine columns"></section>
-			<aside class="top-sidebar three columns"></aside>
-		</div>
-
-		<aside class="ticker"></aside>
+		<section class="slideshow">
+			<div class="wrap">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sit repudiandae voluptates vitae iusto consequatur, iste magnam ipsum, quibusdam similique, maiores reprehenderit. Distinctio necessitatibus asperiores libero quod sed doloremque illum.
+			</div>
+		</section>
+		<aside class="sidebar sidebar--top">
+			<div class="wrap">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum placeat consequuntur, saepe commodi quisquam repellendus, veritatis sunt iure sequi asperiores esse, quo nobis a accusamus officia, cumque natus debitis perspiciatis.
+			</div>
+		</aside>
 	</section>
+
+	<aside class="ticker">
+		<p>The Little Car Show / </p>
+	</aside>
