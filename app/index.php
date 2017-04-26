@@ -3,7 +3,7 @@
 $section = 'Home';
 
 include('perch/runtime.php');
-perch_layout('global.header', array( 'section' => $section ));
+include_once('parts/header.php');
 
 ?>
 
@@ -36,11 +36,11 @@ perch_layout('global.header', array( 'section' => $section ));
 
 		<aside class="sidebar sidebar--main">
 			<div class="wrap">
-				<div class="button">
+				<div class="sidebar-button">
 					<img src="" alt="">
 					<span class="text">Free Swap Meets!</span>
 				</div>
-				<div class="button">
+				<div class="sidebar-button">
 					<img src="" alt="">
 					<span class="text">AutoX</span>
 				</div>
@@ -48,4 +48,4 @@ perch_layout('global.header', array( 'section' => $section ));
 		</aside>
 	</section>
 
-<?php perch_layout('global.footer', array( 'section' => $section )); ?>
+<?php include_once('parts/footer.php'); ?>

@@ -5,7 +5,7 @@ body { background: #666; }
 
 .wrapper {
 	margin: 0 auto;
-	max-width: 1020px;
+	max-width: 1060px;
 	background: $main-color;
 }
 
@@ -14,16 +14,16 @@ body { background: #666; }
 }
 
 .masthead { text-align: center; }
-.logo { display: inline-block; }
+.logo {
+	display: inline-block;
+	margin: -1.25em 0 0 0;
+	pointer-events: none;
+}
 
 .menu {
 	display: inline-block;
 	margin: 0;
-
-	&__item {
-		display: inline-block;
-		margin: 0;
-	}
+	padding: 0 2em;
 
 	&__link {
 		color: #000;
@@ -31,6 +31,32 @@ body { background: #666; }
 		text-transform: uppercase;
 		font-weight: bold;
 		display: block;
+		padding: 0.5em 0 0.5em 0.75em;
+
+		&.active { color: #c00; }
+
+		&:after {
+			content: "|";
+			display: inline-block;
+			padding: 0 0 0 0.75em;
+			color: #000;
+			font-size: 0.8em;
+			position: relative;
+			top: -2px;
+		}
+	}
+
+	&__item {
+		display: inline-block;
+		margin: 0;
+
+		&:first-child {
+			a { padding-left: 0; }
+		}
+
+		&:last-child {
+			a:after { display: none; }
+		}
 	}
 
 	&--right { float: right; }
@@ -43,6 +69,17 @@ body { background: #666; }
 
 .main-header {
 	background: #000;
+	height: 8em;
+}
+
+.tagline {
+	&--left {
+		float: left;
+	}
+
+	&--right {
+		float: right;
+	}
 }
 
 #call-to-action {
@@ -52,7 +89,7 @@ body { background: #666; }
 
 .ticker {
 	background: #333;
-	padding: 0.5em;
+	padding: 0.5em 2em;
 
 	color: $main-color;
 	font-weight: bold;
@@ -66,9 +103,26 @@ body { background: #666; }
 }
 
 .sidebar {
-	width: 275px;
+	width: 300px;
 	background: #333;
 	flex: 2 0 auto;
+}
+
+.sidebar-button {
+	width: 100%;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	span {
+		display: block;
+	}
+}
+
+#main-footer {
+	text-align: center;
 }
 
 
