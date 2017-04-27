@@ -44,6 +44,7 @@
 	<meta charset="UTF-8">
 	<title><?=$title?></title>
 
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
 	<!-- build:css /css/main.min.css -->
 	<link rel="stylesheet" href="/css/normalize.css">
 	<link rel="stylesheet" href="/css/skeleton.css">
@@ -52,7 +53,7 @@
 </head>
 <body>
 
-<div class="wrapper">
+<div class="main-wrapper">
 
 	<header class="main-header">
 		<nav id="main-navigation" class="group">
@@ -60,9 +61,9 @@
 		</nav>
 
 		<div class="masthead">
-			<span class="tagline tagline--left"><img src="" alt="Wheels in Motion"></span>
+			<span class="tagline tagline--left"><img src="/images/tag-left.png" alt="Wheels in Motion" width="294" height="35"></span>
 			<div class="logo"><h1><img src="/images/logo.png" alt="Marina Motorsports"></h1></div>
-			<span class="tagline tagline--right"><img src="" alt="for Community Benefit"></span>
+			<span class="tagline tagline--right"><img src="/images/tag-right.png" alt="for Community Benefit" width="330" height="36"></span>
 		</div>
 	</header>
 
@@ -82,3 +83,5 @@
 	<aside class="ticker">
 		<span>The Little Car Show / Wednesday, August 16, 2017</span>
 	</aside>
+
+	<section class="main-content">

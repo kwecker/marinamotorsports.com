@@ -1,13 +1,10 @@
 <?php
-
 $section = 'Home';
 
 include('perch/runtime.php');
-include_once('parts/header.php');
-
+include('parts/header.php');
 ?>
 
-	<section class="main-content">
 		<section class="content">
 			<div class="wrap">
 				<header>
@@ -34,18 +31,4 @@ include_once('parts/header.php');
 			</div>
 		</section>
 
-		<aside class="sidebar sidebar--main">
-			<div class="wrap">
-				<div class="sidebar-button">
-					<img src="" alt="">
-					<span class="text">Free Swap Meets!</span>
-				</div>
-				<div class="sidebar-button">
-					<img src="" alt="">
-					<span class="text">AutoX</span>
-				</div>
-			</div>
-		</aside>
-	</section>
-
-<?php include_once('parts/footer.php'); ?>
+<?php include('parts/footer.php'); ?>
