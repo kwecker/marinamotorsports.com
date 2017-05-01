@@ -8,7 +8,7 @@ include('../parts/header.php');
 		<section class="content">
 			<div class="wrap">
 				<header>
-					<h1>Marina Motorsports, Inc. Sponsors and Merchants</h1>
+					<h1>Marina Motorsports, Inc. Gallery</h1>
 				</header>
 				<section class="text" id="intro">
 					<?php
