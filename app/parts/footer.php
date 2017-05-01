@@ -19,5 +19,24 @@
 
 </div>
 
+<script src="/js/jquery.min.js"></script>
+<script src="/js/slick.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('.slideshow').slick({
+			mobileFirst: true,
+			autoplay: true,
+			autoplaySpeed: 5000
+		});
+
+		var sum = 0;
+		$(".charities .cost").each(function() {
+			sum += parseInt(($(this).html()).replace(',', ''));
+		});
+
+		$(".charities-total .cost").html((sum.toFixed(2)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+	});
+</script>
+
 </body>
 </html>

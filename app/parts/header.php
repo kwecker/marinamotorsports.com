@@ -22,7 +22,7 @@
 		}
 	}
 
-	function makeNav($items, $current="") {
+	function makeSplitNav($items, $current="") {
 		// This splits the navigation into two equal lists.
 		$count = count($items);
 		$menus = array(
@@ -48,6 +48,7 @@
 	<!-- build:css /css/main.min.css -->
 	<link rel="stylesheet" href="/css/normalize.css">
 	<link rel="stylesheet" href="/css/skeleton.css">
+	<link rel="stylesheet" href="/css/slick.css">
 	<link rel="stylesheet" href="/css/main.css">
 	<!-- endbuild -->
 </head>
@@ -57,22 +58,26 @@
 
 	<header class="main-header">
 		<nav id="main-navigation" class="group">
-			<?php makeNav($nav, $section); ?>
+			<?php makeSplitNav($nav, $section); ?>
 		</nav>
 
 		<div class="masthead">
 			<span class="tagline tagline--left"><img src="/images/tag-left.png" alt="Wheels in Motion" width="294" height="35"></span>
-			<div class="logo"><h1><img src="/images/logo.png" alt="Marina Motorsports"></h1></div>
+			<div class="logo"><h1><a href="/"><img src="/images/logo.png" alt="Marina Motorsports"></a></h1></div>
 			<span class="tagline tagline--right"><img src="/images/tag-right.png" alt="for Community Benefit" width="330" height="36"></span>
 		</div>
 	</header>
 
 	<section id="call-to-action">
-		<section class="slideshow">
-			<div class="wrap">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sit repudiandae voluptates vitae iusto consequatur, iste magnam ipsum, quibusdam similique, maiores reprehenderit. Distinctio necessitatibus asperiores libero quod sed doloremque illum.
-			</div>
-		</section>
+		<?php
+			perch_content_create("Header Slideshow", array(
+				'template'=> 'slideshow.html',
+				'multiple' => true,
+				'edit-mode' => 'singlepage',
+				'shared' => true
+			));
+			perch_content("Header Slideshow")
+		?>
 		<aside class="sidebar sidebar--top">
 			<div class="wrap">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum placeat consequuntur, saepe commodi quisquam repellendus, veritatis sunt iure sequi asperiores esse, quo nobis a accusamus officia, cumque natus debitis perspiciatis.

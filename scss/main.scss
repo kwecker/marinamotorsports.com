@@ -29,13 +29,16 @@ a {
 .logo {
 	display: inline-block;
 	margin: -1.25em 0 0 0;
-	pointer-events: none;
+	position: relative;
+	z-index: 500;
 }
 
 .menu {
 	display: inline-block;
 	margin: 0;
 	padding: 0 3em;
+	position: relative;
+	z-index: 1000;
 
 	&__link {
 		color: #000;
@@ -114,8 +117,80 @@ a {
 }
 
 .slideshow {
-	min-height: 471px;
+	max-width: 760px;
+	max-height: 471px;
+	flex: 1 1 auto;
+	overflow: hidden;
 }
+
+
+/* Icons */
+@font-face
+{
+	font-family: 'slick';
+	font-weight: normal;
+	font-style: normal;
+
+	src: url('../fonts/slick.eot');
+	src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');
+}
+
+/* Slider */
+.slick-loading .slick-list { background: #fff url('../images/ajax-loader.gif') center center no-repeat; }
+
+/* Arrows */
+.slick-prev, .slick-next {
+	font-size: 0;
+	line-height: 0;
+
+	position: absolute;
+	top: 0;
+
+	display: block;
+
+	width: 60px;
+	height: 100%;
+	padding: 0;
+
+	display: block;
+
+	cursor: pointer;
+
+	color: transparent;
+	border: none;
+	outline: none;
+	background: transparent;
+	z-index: 2000;
+
+	&:hover, &:focus {
+		color: transparent;
+		outline: none;
+		background: transparent;
+
+		&:before { opacity: 1; }
+	}
+
+	&:before {
+		content: "";
+		width: 24px;
+		height: 52px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	&.slick-disabled:before { opacity: .25; }
+}
+
+.slick-prev {
+	left: 0;
+	&:before { background-image: url("../images/arrow-left.png"); }
+}
+
+.slick-next {
+	right: 0;
+	&:before { background-image: url("../images/arrow-right.png"); }
+}
+
 
 .ticker {
 	background: #333;
@@ -158,11 +233,36 @@ a {
 	flex: 1 1 auto;
 }
 
+.sponsors {
+	border-top: 1px solid;
+	margin-bottom: 3em;
+
+	h2 {
+		background: $main-color;
+		width: 40%;
+		font-size: 1.15em;
+		padding: 0.25em 1em;
+	}
+
+	a {
+		margin-right: 3em;
+		margin-bottom: 1em;
+
+		&:last-child { margin-right: 0; }
+	}
+}
+
 .charities {
 	line-height: 1.25em;
 
 	.name { font-weight: bold; }
-	.cost { padding-left: 0.5em; }
+	.cost {
+		padding-left: 0.5em;
+
+		&:before {
+			content: "$";
+		}
+	}
 }
 
 .charities-total {
@@ -174,7 +274,50 @@ a {
 	font-weight: bold;
 	text-transform: uppercase;
 
-	span { margin-right: 2em; }
+	.title { margin-right: 2em; }
+	.cost:before { content: "$"; }
+}
+
+.square-button {
+	line-height: 0;
+	margin-bottom: 1em;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	span {
+		display: block;
+		background: #d0c38d;
+		padding: 0.5em 1em;
+		font-weight: bold;
+		font-size: 1.25em;
+		line-height: 1em;
+	}
+
+	a {
+		color: #000 !important;
+		text-decoration: none;
+
+		&:hover {
+			color: #fff !important;
+
+			span { background: #007cc0; }
+		}
+	}
+}
+
+.gallery-grid {
+	&__button {
+		width: 275px;
+		display: inline-block;
+		margin: 4em 4em 0 0;
+
+		&:nth-child(2n) {
+			margin: 4em 0 0 0;
+		}
+	}
 }
 
 .sidebar {
@@ -215,33 +358,7 @@ a {
 
 .sidebar-button {
 	width: 100%;
-	line-height: 0;
-	margin-bottom: 2em;
-
-	img {
-		width: 100%;
-		height: auto;
-	}
-
-	span {
-		display: block;
-		background: #d0c38d;
-		padding: 0.5em 1em;
-		font-weight: bold;
-		font-size: 1.25em;
-		line-height: 1em;
-	}
-
-	a {
-		color: #000;
-		text-decoration: none;
-
-		&:hover {
-			color: #fff;
-
-			span { background: #007cc0; }
-		}
-	}
+	margin-bottom: 1em;
 }
 
 #main-footer {

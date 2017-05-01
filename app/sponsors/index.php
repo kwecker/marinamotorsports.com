@@ -1,5 +1,5 @@
 <?php
-$section = 'Charities';
+$section = 'Sponsors';
 
 include('../perch/runtime.php');
 include('../parts/header.php');
@@ -8,23 +8,21 @@ include('../parts/header.php');
 		<section class="content">
 			<div class="wrap">
 				<header>
-					<h1>Marina Motorsports, Inc. Charitable Beneficiaries</h1>
+					<h1>Marina Motorsports, Inc. Sponsors and Merchants</h1>
 				</header>
-				<section class="text">
+				<section class="text" id="intro">
 					<?php
 						perch_content_create("Intro Text", array( 'template' => 'textblock.html'));
 						perch_content("Intro Text");
-
-						perch_content_create("Charitable Contributions", array(
-							'template' => 'charity_list.html',
+					?>
+					<?php
+						perch_content_create("Sponsor Levels", array(
+							'template' => 'sponsors.html',
 							'multiple' => true,
 							'edit-mode' => 'singlepage'
 						));
-						perch_content("Charitable Contributions");
+						perch_content("Sponsor Levels");
 					?>
-					<div class="charities-total">
-						<span class="title">Total</span> <span class="cost">0.00</span>
-					</div>
 				</section>
 			</div>
 		</section>
