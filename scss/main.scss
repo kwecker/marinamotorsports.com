@@ -312,11 +312,35 @@ a {
 	&__button {
 		width: 275px;
 		display: inline-block;
-		margin: 4em 4em 0 0;
+		margin: 2em 4em 2em 0;
 
 		&:nth-child(2n) {
-			margin: 4em 0 0 0;
+			margin: 2em 0;
 		}
+	}
+}
+
+.gallery-nav {
+	padding: 0;
+	margin: 0 0 em 0;
+}
+
+.glist {
+	list-style-type: none;
+
+	li { margin: 0 0 3em 0;}
+
+	img {
+		max-width: 48%;
+		height: auto;
+		vertical-align: top;
+	}
+
+	span {
+		display: inline-block;
+		width: 45%;
+		margin-left: 5%;
+		vertical-align: top;
 	}
 }
 

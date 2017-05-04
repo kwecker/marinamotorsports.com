@@ -12,37 +12,24 @@ include('../parts/header.php');
 				</header>
 				<section class="text" id="intro">
 					<?php
-						perch_content_create("Intro Text", array( 'template' => 'textblock.html'));
-						perch_content("Intro Text");
+						if(perch_get('album')) {
+							perch_gallery_albums(array(
+								'template' => 'album-nav.html'
+							));
+							perch_gallery_album_images(perch_get('album'), array(
+								'template' => 'image-list.html'
+							));
+						} else {
+							// Intro Block
+							perch_content_create("Intro Text", array( 'template' => 'textblock.html'));
+							perch_content("Intro Text");
+							// Gallery Listing
+							perch_gallery_albums(array(
+								'template' => 'album-list.html',
+								'image' => true
+							));
+						}
 					?>
-
-					<section class="gallery-grid">
-						<div class="gallery-grid__button square-button">
-							<a href="#">
-								<img src="../images/gallery/thumbs/2016.jpg" alt="" width="272" height="168">
-								<span class="text">The Little Car Show 2016</span>
-							</a>
-						</div>
-						<div class="gallery-grid__button square-button">
-							<a href="#">
-								<img src="../images/gallery/thumbs/2015.jpg" alt="" width="272" height="168">
-								<span class="text">The Little Car Show 2015</span>
-							</a>
-						</div>
-						<div class="gallery-grid__button square-button">
-							<a href="#">
-								<img src="../images/gallery/thumbs/2014.jpg" alt="" width="272" height="168">
-								<span class="text">The Little Car Show 2014</span>
-							</a>
-						</div>
-						<div class="gallery-grid__button square-button">
-							<a href="#">
-								<img src="../images/gallery/thumbs/2013.jpg" alt="" width="272" height="168">
-								<span class="text">The Little Car Show 2013</span>
-							</a>
-						</div>
-					</section>
-
 				</section>
 			</div>
 		</section>
