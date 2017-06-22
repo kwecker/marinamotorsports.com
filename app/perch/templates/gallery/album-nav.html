@@ -1,9 +1,11 @@
 <perch:before>
-	<ul class="gallery-nav menu">
-	<li class="menu__item"><a href="/gallery/" class="menu__link">Gallery Home</a>
+	<ul class="gallery-nav">
+	<li><a href="/gallery/">Gallery Home</a>
 </perch:before>
-	<li class="menu__item">
-		<a href="/gallery/album/<perch:gallery id="albumSlug" />/" class="menu__link"><span class="text"><perch:gallery id="albumTitle" /></span></a>
+<perch:if not-exists="notlisted">
+	<li>
+		<a href="/gallery/album/<perch:gallery id="albumSlug" />/"><span class="text"><perch:gallery id="albumTitle" /></span></a>
+</perch:if>
 <perch:after>
 	</ul>
 </perch:after>

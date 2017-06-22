@@ -1,12 +1,14 @@
 <perch:before>
 	<section class="gallery-grid">
 </perch:before>
+<perch:if not-exists="notlisted">
 	<div class="gallery-grid__button square-button">
 		<a href="/gallery/album/<perch:gallery id="albumSlug" />/">
-			<perch:if exists="small"><img src="<perch:gallery id="small" />" alt="<perch:gallery id="imageAlt" />" height="<perch:gallery id="small-h" />" width="<perch:gallery id="small-w" /> "/></perch:if>
+			<perch:if exists="thumb"><img src="<perch:gallery id="thumb" />" alt="<perch:gallery id="imageAlt" />" height="<perch:gallery id="thumb-h" />" width="<perch:gallery id="thumb-w" /> "/></perch:if>
 			<span class="text"><perch:gallery id="albumTitle" /></span>
 		</a>
 	</div>
+</perch:if>
 <perch:after>
 	</section>
 </perch:after>

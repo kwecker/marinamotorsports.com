@@ -37,7 +37,6 @@
 		}
 	}
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,7 +46,6 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
 	<!-- build:css /css/main.min.css -->
 	<link rel="stylesheet" href="/css/normalize.css">
-	<link rel="stylesheet" href="/css/skeleton.css">
 	<link rel="stylesheet" href="/css/slick.css">
 	<link rel="stylesheet" href="/css/main.css">
 	<!-- endbuild -->
@@ -76,10 +74,20 @@
 				'edit-mode' => 'singlepage',
 				'shared' => true
 			));
-			perch_content("Header Slideshow")
 		?>
+		<section class="slideshow">
+			<?php perch_content("Header Slideshow"); ?>
+		</section>
 		<aside class="sidebar sidebar--top">
 			<div class="wrap">
+				<figure class="register-badge">
+					<a href="/events/the-little-car-show/registration">
+						<img src="/images/little-car-show-badge.png" alt="The Little Car Show | Pacific Grove, CA" width="238" height="90">
+						<figcaption>
+							Click here to Register Your Car for the <?php perch_content("Event Year"); ?> The Little Car Show!
+						</figcaption>
+					</a>
+				</figure>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum placeat consequuntur, saepe commodi quisquam repellendus, veritatis sunt iure sequi asperiores esse, quo nobis a accusamus officia, cumque natus debitis perspiciatis.
 			</div>
 		</aside>

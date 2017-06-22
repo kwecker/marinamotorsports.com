@@ -22,6 +22,8 @@ include('parts/header.php');
 						<h2>The Little Car Show Gallery</h2>
 					</header>
 
+					<?php perch_gallery_album_images('home-page-gallery', array( 'template' => 'image-grid.html')); ?>
+
 				</section>
 			</div>
 		</section>
