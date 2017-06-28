@@ -3,13 +3,21 @@ _res/*
 _docs/*
 lib/vendor/*
 node_modules/*
+lib/*
+
+# Files
+*.bak
+gulpfile.js
+package.json
 
 # App Folder
 app/images/*
 app/css/*
 app/perch/*
-app/fonts/*
 !app/perch/templates/*
+app/fonts/*
+app/res/*
+app/js/*
 
 # Dist Folder
 dist/*
