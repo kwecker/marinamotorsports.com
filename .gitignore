@@ -14,7 +14,7 @@ package.json
 app/images/*
 app/css/*
 app/perch/*
-!app/perch/templates/*
+!app/perch/templates/**/*
 app/fonts/*
 app/res/*
 app/js/*
