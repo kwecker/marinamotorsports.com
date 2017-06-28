@@ -1,1 +1,6 @@
 app/images/*
+_res/*
+_docs/*
+app/css/*
+app/perch/*
+!app/perch/templates/*
