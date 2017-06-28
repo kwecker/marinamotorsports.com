@@ -1,6 +1,15 @@
-app/images/*
+# Base Folders
 _res/*
 _docs/*
+lib/vendor/*
+node_modules/*
+
+# App Folder
+app/images/*
 app/css/*
 app/perch/*
+app/fonts/*
 !app/perch/templates/*
+
+# Dist Folder
+dist/*
