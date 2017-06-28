@@ -13,8 +13,16 @@ package.json
 # App Folder
 app/images/*
 app/css/*
-app/perch/*
-!app/perch/templates/**/*
+app/perch/**/*.*
+app/perch/addons/**/*
+app/perch/core/**/*
+!app/perch/templates/**/*.html
+app/perch/templates/**/stock/*
+app/perch/templates/**/_stock/*
+app/perch/templates/navigation/*
+app/perch/templates/shop/*
+app/perch/templates/pages/*
+app/perch/templates/categories/*
 app/fonts/*
 app/res/*
 app/js/*

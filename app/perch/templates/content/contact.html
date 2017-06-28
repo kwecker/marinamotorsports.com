@@ -1,0 +1,10 @@
+<ul class="contact-info">
+	<li><strong><perch:content id="title" type="text" label="Name" title="true" /></strong></li>
+
+	<perch:if exists="email">
+	<li><a href="mailto:<perch:content id="email" type="text" label="Email" />"><perch:content id="email" /></a></li>
+	</perch:if>
+
+	<li><perch:content id="address1" type="text" label="Address" /></li>
+	<li><perch:content id="citystate" type="text" label="City, State, Zip" /></li>
+</ul>

@@ -1,0 +1,16 @@
+<perch:before>
+	<section class="past-presenters">
+		<h2>Past Trophy Presenters</h2>
+</perch:before>
+
+	<div class="presenter group">
+		<img src="<perch:content id="image" type="image" label="Image" width="125" bucket="presenters" />" alt="<perch:content id="name" type="text" label="Name" title="true" order="1" />" class="presenter__image">
+		<div class="presenter__text">
+			<h3 class="presenter__name"><perch:content id="name" type="text" /></h3>
+			<perch:content id="desc" type="textarea" label="Description" html="true" editor="redactor" order="2" />
+		</div>
+	</div>
+
+<perch:after>
+	</section>
+</perch:after>
