@@ -17,6 +17,7 @@ a {
 .main-wrapper {
 	margin: 0 auto;
 	max-width: 1060px;
+	min-width: 1060px; // No Responsiveness fix
 	background: $main-color;
 }
 
@@ -31,6 +32,27 @@ a {
 	z-index: 500;
 
 	h1 { margin: 0; }
+}
+
+hr {
+	height: 1px;
+	border: none;
+	background: #000;
+	margin: 2em 0 3em 0;
+}
+
+.event-registration-area {
+	strong {
+		display: inline-block;
+		width: 45%;
+		font-size: 1.25em;
+		line-height: 1.5em;
+	}
+
+	.register-badge {
+		display: inline-block;
+		margin-left: 4em;
+	}
 }
 
 .menu {
@@ -248,6 +270,7 @@ a {
 
 	h1 { font-size: 1.5em; }
 	h2 { font-size: 1.25em; margin-top: 1.25em; }
+	h3 { font-size: 1.1em; margin-top: 1.25em; margin-bottom: -0.5em; }
 
 	ul {
 		&.multi-column {
@@ -261,6 +284,12 @@ a {
 				padding: 0;
 			}
 		}
+	}
+
+	ol {
+		padding-left: 2em;
+
+		ol { list-style-type: lower-alpha; }
 	}
 }
 
@@ -276,15 +305,25 @@ a {
 		background: $main-color;
 		width: 40%;
 		font-size: 1.15em;
-		margin: 0;
+		margin: 0 0 1.5em 0;
 		padding: 0.25em 1em;
 	}
 
 	a {
-		margin-right: 3em;
+		// margin-right: 3em;
+		display: inline-block;
+		vertical-align: middle;
+		text-align: center;
+		width: 30%;
+		margin-right: 2%;
 		margin-bottom: 1em;
 
 		&:last-child { margin-right: 0; }
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
 	}
 }
 
@@ -314,6 +353,39 @@ a {
 	.cost:before { content: "$"; }
 }
 
+.text-links {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+
+	a {
+		margin-right: 0.5em;
+		font-weight: bold;
+	}
+}
+
+.image-links {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	line-height: 0;
+
+	li {
+		display: inline-block;
+		vertical-align: top;
+		width: 32%;
+		text-align: center;
+		margin: 2em 0;
+	}
+
+	img { max-width: 100%; height: auto; }
+
+	a {
+		margin-right: 0.5em;
+		font-weight: bold;
+	}
+}
+
 table.calendar {
 	width: 100%;
 	border-collapse: collapse;
@@ -337,6 +409,7 @@ table.calendar {
 	}
 
 	.past { background: #eee; color: #666; }
+	.notinmonth { background: #eee; color: #666; }
 	.today { background: $main-color; }
 }
 
@@ -353,6 +426,61 @@ table.calendar {
 		&:first-child { text-align: left; }
 		&:last-child { text-align: right; }
 	}
+}
+
+.poster-links {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+
+	li {
+		display: inline-block;
+		vertical-align: bottom;
+
+		width: 23%;
+		margin-right: 1%;
+		margin-bottom: 1em;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		border: 1px solid #666;
+		line-height: 0;
+	}
+
+	p {
+		font-size: 0.75em;
+		margin: 0;
+	}
+}
+
+.calendar-links {
+	margin-top: 3em;
+
+	> div { display: inline-block; vertical-align: bottom; }
+
+	.map {
+		width: 35%;
+		overflow: hidden;
+		max-height: 230px;
+
+		p {
+			font-size: 0.75em;
+			margin: 0.5em 0 0 0;
+		}
+	}
+
+	.cmsmap {
+		width: 100%;
+		height: 203px;
+	}
+}
+
+.single-poster-link {
+	@extend .poster-links;
+	width: 23%;
+	margin-right: 1%;
 }
 
 .square-button {
@@ -469,6 +597,61 @@ table.calendar {
 		width: 100%;
 		height: auto;
 	}
+}
+
+.column {
+	float: left;
+
+	&--large { width: 55%; }
+	&--small {
+		width: 40%;
+		margin-left: 5%;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.photo-column {
+	margin-top: 1.5em;
+	figure { width: 100%; padding: 0; margin: 0 0 6em 0; }
+	figcaption { font-style: oblique; }
+}
+
+
+.past-presenters { clear: both; }
+.presenter {
+	margin-bottom: 2em;
+
+	&__image {
+		float: left;
+		margin: 0.25em 1em 0 0;
+	}
+	&__text { overflow: hidden; }
+	h3 { margin-top: 0; }
+}
+
+.contact-info {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 1em 0;
+}
+
+.map {
+	display: inline-block;
+	vertical-align: top;
+	width: 45%;
+	margin-right: 4%;
+	overflow: hidden;
+	max-height: 330px;
+
+}
+
+.cmsmap {
+	width: 100%;
+	height: 300px;
 }
 
 .sidebar {

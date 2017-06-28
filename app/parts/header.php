@@ -88,7 +88,9 @@
 						</figcaption>
 					</a>
 				</figure>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum placeat consequuntur, saepe commodi quisquam repellendus, veritatis sunt iure sequi asperiores esse, quo nobis a accusamus officia, cumque natus debitis perspiciatis.
+				<p>
+					The complete list of events that Marina Motorsports, Inc. is involved with on the Monterey Peninsula is listed on our <a href="/calendar/">calendar</a> page.
+				</p>
 			</div>
 		</aside>
 	</section>

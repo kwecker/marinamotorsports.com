@@ -22,6 +22,26 @@ include('../parts/header.php');
 						));
 					?>
 					</section>
+					<section class="calendar-links">
+						<?php perch_content_custom("Posters", array(
+							'page' => '/media/*',
+							'template' => 'poster-single.html',
+							'count' => 1
+						)); ?>
+						<?php
+							perch_content_create("Swap Meet Poster", array(
+								'template' => 'poster-single.html',
+								'shared' => true
+							));
+							perch_content("Swap Meet Poster");
+						?>
+						<?php
+							perch_content_create("Regional Map", array(
+								'template' => 'map.html'
+							));
+							perch_content("Regional Map");
+						 ?>
+					</section>
 				</section>
 			</div>
 		</section>

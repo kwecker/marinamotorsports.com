@@ -14,6 +14,20 @@ include('../parts/header.php');
 					<?php
 						perch_content_create("Intro Text", array( 'template' => 'textblock.html'));
 						perch_content("Intro Text");
+
+						perch_content_create("Logo Links", array(
+							'template' => 'link-list-images.html',
+							'multiple' => true,
+							'edit-mode' => 'singlepage'
+						));
+						perch_content("Logo Links");
+
+						perch_content_create("Text Links", array(
+							'template' => 'link-list.html',
+							'multiple' => true,
+							'edit-mode' => 'singlepage'
+						));
+						perch_content("Text Links");
 					?>
 				</section>
 			</div>

@@ -1,13 +1,16 @@
 <aside class="sidebar sidebar--main">
 	<div class="wrap">
 		<div class="sidebar-button square-button">
-			<a href="">
+			<?php $poster = perch_content_custom("Swap Meet Poster", array(
+					'skip-template' => true
+			)); ?>
+			<a href="<?=$poster[0]['image']?>">
 				<img src="/images/sidebar/swaps.jpg" alt="" width="214" height="149">
 				<span class="text">Free Swap Meets!</span>
 			</a>
 		</div>
 		<div class="sidebar-button square-button">
-			<a href="">
+			<a href="/calendar/">
 				<img src="/images/sidebar/autox.jpg" alt="" width="214" height="136">
 				<span class="text">AutoX</span>
 			</a>
@@ -23,6 +26,7 @@
 				'match' => 'gte',
 				'value' => date('Y-m-d H:i:s'),
 				'template' => 'events/listing/calendar.html',
+				'sort' => 'eventDateTime',
 				'count' => 5
 			)); ?>
 

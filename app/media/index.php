@@ -14,6 +14,13 @@ include('../parts/header.php');
 					<?php
 						perch_content_create("Intro Text", array( 'template' => 'textblock.html'));
 						perch_content("Intro Text");
+
+						perch_content_create("Posters", array(
+							'template' => 'posters.html',
+							'multiple' => true,
+							'edit-mode' => 'singlepage'
+						));
+						perch_content("Posters");
 					?>
 				</section>
 			</div>
