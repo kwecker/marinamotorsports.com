@@ -16,7 +16,7 @@ include('../parts/header.php');
 							The complete list of events that Marina Motorsports, Inc. is involved with on the Monterey Peninsula is listed on our <a href="/calendar/">calendar page</a>.
 						</strong>
 						<figure class="register-badge">
-							<a href="/events/the-little-car-show/registration">
+							<a href="/registration/">
 								<img src="/images/little-car-show-badge.png" alt="The Little Car Show | Pacific Grove, CA" width="238" height="90">
 								<figcaption>
 									Click here to Register Your Car for the <?php perch_content("Event Year"); ?> The Little Car Show!

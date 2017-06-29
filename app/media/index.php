@@ -21,6 +21,8 @@ include('../parts/header.php');
 							'edit-mode' => 'singlepage'
 						));
 						perch_content("Posters");
+
+						perch_content("Swap Meet Poster");
 					?>
 				</section>
 			</div>

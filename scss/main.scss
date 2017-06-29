@@ -329,6 +329,8 @@ hr {
 
 .charities {
 	line-height: 1.25em;
+	padding: 0;
+	margin: 0;
 
 	.name { font-weight: bold; }
 	.cost {
@@ -348,6 +350,7 @@ hr {
 	float: right;
 	font-weight: bold;
 	text-transform: uppercase;
+	margin-top: 2em;
 
 	.title { margin-right: 2em; }
 	.cost:before { content: "$"; }
@@ -559,6 +562,8 @@ table.calendar {
 
 .glist {
 	list-style-type: none;
+	padding: 0;
+	margin: 0;
 
 	li { margin: 0 0 3em 0;}
 
@@ -568,11 +573,13 @@ table.calendar {
 		vertical-align: top;
 	}
 
-	span {
+	.desc {
 		display: inline-block;
-		width: 45%;
+		width: 46%;
 		margin-left: 5%;
 		vertical-align: top;
+
+		p { margin: 0; }
 	}
 }
 

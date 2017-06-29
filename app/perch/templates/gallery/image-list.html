@@ -1,13 +1,13 @@
 <perch:before>
 	<h2><perch:gallery id="albumTitle" /></h2>
 
-	<ul class="imagelisting glist">
+	<ul class="imagelisting glist lightbox">
 </perch:before>
 	<li>
-		<a href="<perch:gallery id="main"  />"><img src="<perch:gallery id="small" />" width="<perch:gallery id="small-w" />" height="<perch:gallery id="small-h" />" alt="<perch:gallery id="imageAlt" />" /></a><!--
-	 --><span class="desc">
+		<a href="<perch:gallery id="main"  />" class="chocolat-image"><img src="<perch:gallery id="small" />" width="<perch:gallery id="small-w" />" height="<perch:gallery id="small-h" />" alt="<perch:gallery id="imageAlt" />" /></a><!--
+	 --><div class="desc">
 			<perch:gallery id="desc" html="true" />
-		</span>
+		</div>
 	</li>
 <perch:after>
 	</ul>
