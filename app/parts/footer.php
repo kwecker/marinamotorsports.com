@@ -18,10 +18,10 @@
 	</footer>
 
 </div>
-<!-- build:js /js/jquery.app.min.js -->
-<script src="../js/jquery.min.js"></script>
-<script src="../js/slick.min.js"></script>
-<script src="../js/jquery.chocolat.min.js"></script>
+<!-- build:js(app) /js/jquery.app.min.js -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/slick.min.js"></script>
+<script src="/js/jquery.chocolat.min.js"></script>
 <!-- endbuild -->
 <script>
 	$(document).ready(function() {

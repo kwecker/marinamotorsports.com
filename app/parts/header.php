@@ -52,11 +52,11 @@
 	<title><?=$title?></title>
 
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
-	<!-- build:css /css/main.min.css -->
-	<link rel="stylesheet" href="../css/normalize.css">
-	<link rel="stylesheet" href="../css/slick.css">
-	<link rel="stylesheet" href="../css/chocolat.css">
-	<link rel="stylesheet" href="../css/main.css">
+	<!-- build:css(app) /css/main.min.css -->
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/slick.css">
+	<link rel="stylesheet" href="/css/chocolat.css">
+	<link rel="stylesheet" href="/css/main.css">
 	<!-- endbuild -->
 </head>
 <body>
