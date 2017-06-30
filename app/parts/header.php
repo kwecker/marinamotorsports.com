@@ -2,6 +2,14 @@
 
 	$title = "Marina Motorsports";
 
+	if ($section != 'Home') {
+		if (isset($subsection)) {
+			$title = $subsection . ' | ' . $title;
+		} else {
+			$title = $section . ' | ' . $title;
+		}
+	}
+
 	$nav = array(
 		'Home' => '/',
 		'Events' => '/events/',

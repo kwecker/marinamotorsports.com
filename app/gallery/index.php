@@ -1,7 +1,12 @@
 <?php
+include('../perch/runtime.php');
+
 $section = 'Gallery';
 
-include('../perch/runtime.php');
+if (perch_get('album')) {
+	$subsection = ucwords(str_replace('-', ' ', perch_get('album'))) . ' Photos';
+}
+
 include('../parts/header.php');
 ?>
 
