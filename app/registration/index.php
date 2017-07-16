@@ -11,7 +11,7 @@
 		$step = 'paid';
 
 		// Finalize Charge
-		charge_card($_POST['stripeToken']);
+		charge_registration($_POST['stripeToken']);
 		// Send Emails
 		if(isset($_SESSION['registrant'])) {
 			$email = $_SESSION['registrant']['email'];
